@@ -22,7 +22,9 @@ Install
 Run
 ---
 
-...
+::
+
+    $ stm32ctl --help
 
 
 License
