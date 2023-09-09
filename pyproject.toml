@@ -1,0 +1,35 @@
+[project]
+name = "stm32ctl"
+version = "0.1.0"
+description = "STM32 system bootloader control"
+readme = "README.rst"
+requires-python = ">=3.10"
+license = {text = "GPLv3"}
+dependencies = [
+    "hat-aio ~=0.7.8",
+    "hat-drivers ~=0.7.8",
+]
+authors = [
+    {name = "Bozo Kopic", email = "bozo@kopic.xyz"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
+]
+
+[project.optional-dependencies]
+dev = ["mkwhl ~=0.2.6"]
+
+[project.scripts]
+stm32ctl = "stm32ctl.main:main"
+
+[project.urls]
+Repository = "https://github.com/bozokopic/stm32ctl.git"
+
+[build-system]
+build-backend = "mkwhl"
+requires = ["mkwhl ~=0.2.6"]
+
+[tool.mkwhl]
+src-dir = '.'
+src-include-patterns = ["stm32ctl/**/*"]

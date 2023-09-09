@@ -8,7 +8,7 @@ AN3155 USART protocol.
 Requirements
 ------------
 
-* python >=3.8
+* python >=3.10
 
 
 Install
@@ -32,7 +32,7 @@ License
 
 stm32ctl - STM32 system bootloader control
 
-Copyright (C) 2022 Bozo Kopic
+Copyright (C) 2022-2023 Bozo Kopic
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
